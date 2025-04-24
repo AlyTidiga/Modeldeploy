@@ -9,6 +9,7 @@ import numpy as np
 app = Flask(__name__)
 app.secret_key = 'a1b2c3d4e5f6g7h8i9j0k1l2'  # Secure secret key
 
+
 # Function to connect to the database
 def get_db_connection():
     conn = sqlite3.connect('users.db', timeout=10)  # Set timeout to 10 seconds
